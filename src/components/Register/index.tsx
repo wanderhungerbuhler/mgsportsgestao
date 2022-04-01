@@ -92,7 +92,7 @@ export function Register() {
 
   return (
     <Flex w={["1280", "100"]} m="auto" direction="column">
-      <Box borderWidth={.1} borderRadius={7} borderColor="gray.700" bg="gray.900" mt="10" mb="7" p="7">
+      <Box w={["370px", "100%"]} borderWidth={.1} borderRadius={7} borderColor="gray.700" bg="gray.900" mt="10" mb="7" p="7">
         <Heading size="lg">Registrar Atletas</Heading>
         <Text width={["sm", "sm"]} mt="4" color="gray.500" fontSize="md">Não se esqueça, o cadastro dos atletas é importante para o
           acompanhamento e evolução deles dentro e fora de campo!
@@ -100,8 +100,8 @@ export function Register() {
       </Box>
 
       <Flex m={["0", "0", "auto"]}>
-        <Stack direction={["column", "column", "row"]} spacing="7">
-          <Box w={[350, 470, 580]} minHeight="500">
+        <Stack direction={["column", "column", "row"]} spacing={["-20", "7"]}>
+          <Box w={[380, 470, 580]} p={["4"]} minHeight="500">
             <Input label="Nome Completo" placeholder="Nome Completo" error={errors?.nome_completo} {...register('nome_completo')} />
             <Input label="RG" placeholder="RG" error={errors?.rg} {...register('rg')} />
             <Input label="CPF" placeholder="CPF" error={errors?.cpf} {...register('cpf')} />
@@ -114,7 +114,7 @@ export function Register() {
             </Stack>
           </Box>
 
-          <Box w={[350, 470, 580]} minHeight="500">
+          <Box w={[380, 470, 580]} p={["4"]} minHeight="500">
             <Input label="Nome da Mãe Completo" placeholder="Nome da Mãe Completo" error={errors?.nome_mae_completo} {...register('nome_mae_completo')} />
             <Input label="Nome do Pai Completo (Opcional)" placeholder="Nome do Pai Completo (Opcional)" error={errors?.nome_pai_completo} {...register('nome_pai_completo')} />
 
