@@ -100,7 +100,7 @@ export function Register() {
       </Box>
 
       <Flex m={["0", "0", "auto"]}>
-        <Stack direction={["column", "column", "row"]} spacing={["-20", "7"]}>
+        <Stack direction={["column", "column", "row"]} spacing={["0", "7"]}>
           <Box w={[380, 470, 580]} p={["4"]} minHeight="500">
             <Input label="Nome Completo" placeholder="Nome Completo" error={errors?.nome_completo} {...register('nome_completo')} />
             <Input label="RG" placeholder="RG" error={errors?.rg} {...register('rg')} />
